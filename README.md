@@ -1,8 +1,8 @@
 # ClipCut
 
-Dark-themed, responsive website template for short-form video editing agencies and freelance editors (static HTML/CSS/JS, no build step).
+Dark, responsive website template for short-form video editing agencies and freelance editors. Static HTML/CSS/JS, no build step.
 
-**Pages:** Home (hero, problem, how it works, featured work, stats), Work, Results / case studies, Contact, 404.
+**Pages:** Home (hero + editing timeline, problem, how it works, recent work, numbers, quote), Work (filterable), Results (case studies), Contact, 404.
 
 ## Run locally
 
@@ -12,8 +12,8 @@ python3 -m http.server 8000
 
 ## Customize
 
-- Colors, radius, font: CSS variables at the top of `css/styles.css`.
+- Colors and fonts: variables at the top of `css/styles.css` (`--accent` is the orange).
 - Copy: edit the HTML directly.
-- Video cards: copy an `<article class="vcard">` block; change `--h` (0–360) for the thumbnail hue. Swap the gradient for a real thumbnail via `background-image`.
+- Video cards: duplicate an `<article class="clip">` block and swap the image in `img/` (9:16 portrait works best). The placeholder stills are AI-generated; replace them with frames from your own videos.
 - Contact form: set the `<form action>` in `contact.html` to your Formspree/Netlify endpoint.
-- 404: host `404.html` as your server's not-found page (GitHub Pages and Netlify pick it up automatically).
+- 404: serve `404.html` as your host's not-found page.
